@@ -2,9 +2,6 @@
 
 raspistill -t 1000 -o ~/cam/src/$(date "+%m%d_%H%M").jpg 
 cd ~/cam
-git add *
-echo "git111 add" > ~/log
-git commit -m 'push'
-echo "git add"
+git add * 
+git commit -m 'push' >> ~/log
 git push origin master
-echo "git add"
